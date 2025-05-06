@@ -1,0 +1,383 @@
+
+/*--------------------------------------------Structure------------------------------------------------------*/
+.container {
+    width: 70vw;
+    background: #dbebd3;
+    overflow: hidden;
+    aspect-ratio: 1/1;
+    outline: 2px solid black;
+
+}
+
+.top-row, .center-row, .bottom-row {
+    display: flex;
+    flex-wrap: nowrap;
+    outline: 1px solid black;
+}
+
+.top-row {
+    height: 15%;
+}
+.center-row {
+    height: 70%;
+}
+.bottom-row {
+    height: 15%;
+}
+
+.col {
+    flex: 0 0 7.78%;
+    max-width: 7.78%;
+    padding: 0;
+    margin: 0;
+
+}
+
+.col-1-5 {
+    flex: 0 0 15%;
+
+}
+.col-8-3 {
+    flex: 0 0 70%;
+
+}
+
+
+/*--------------------------------------------General------------------------------------------------------*/
+
+.tile{
+    outline: 1px solid black;
+}
+
+.side-tile {
+    outline: 1px solid black;
+    width: 100%;
+    flex-grow: 1;
+    position: relative;
+}
+
+
+/*--------------------------------------------Corners------------------------------------------------------*/
+.top-left-corner{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+    transform: rotate(180deg);
+}
+
+.top-right-corner{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+    transform: rotate(270deg);
+}
+
+.bottom-left-corner{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+    transform: rotate(90deg);
+}
+
+.bottom-right-corner{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+
+}
+/*------------------------------------------Center of the board------------------------------------------------*/
+.middle-part{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.logo{
+    width: 65%;
+    height: auto;
+    transform: rotate(-45deg);
+}
+
+.chance{
+    position: absolute;
+    left: 68%;
+    top: 72%;
+    width: 24%;
+    height: auto;
+    transform: rotate(-45deg);
+    outline: 5px solid white;
+}
+
+.chest{
+    position: absolute;
+    left: 7%;
+    top: 11%;
+    width: 25%;
+    height: auto;
+    transform: rotate(135deg);
+    outline: 5px solid white;
+}
+
+
+
+/*--------------------------------------------Tile title------------------------------------------------------*/
+.title {
+    position: absolute;
+    font-size: 0.65vw;
+    font-weight: 500;
+    line-height: 1vw;
+    text-align: center;
+}
+
+.title-right {
+    top: 8%;
+    bottom: 0;
+    left: 30%;
+
+    height: 85%;
+    width: 50%;
+}
+
+.title-left {
+    top: 8%;
+    right: 30%;
+
+    height: 85%;
+    width: 50%;
+}
+
+.title-bottom {
+    top: 35%;
+
+    height: 50%;
+    width: 100%;
+}
+
+.title-top {
+    bottom: 35%;
+
+    height: 50%;
+    width: 100%;
+}
+
+
+/*--------------------------------------------Tile header------------------------------------------------------*/
+/*Which will be a title or a colored box*/
+.header {
+    height: 21%;
+    position: absolute;
+    outline: 2px solid black;
+
+}
+.headerSide {
+    width: 20%;
+    position: absolute;
+    outline: 2px solid black;
+}
+
+
+.header-right-property {
+    top: 1px;
+    bottom: 1px;
+    left: 1px;
+}
+
+.header-right-card {
+    top: 8%;
+    bottom: 0;
+    left: 10%;
+
+    height: 85%;
+    width: 50%;
+}
+
+
+.header-left-property {
+    top: 1px;
+    bottom: 1px;
+    right: 1px;
+}
+
+
+.header-left-card {
+    top: 8%;
+    bottom: 0;
+    right: 10%;
+
+    height: 85%;
+    width: 50%;
+}
+
+.header-bottom-property {
+    top: 1px;
+    right: 1px;
+    left: 1px;
+}
+
+.header-bottom-card {
+    top: 15%;
+    width: 100%;
+    height: 30%;
+
+}
+
+.header-top-property {
+    bottom: 1px;
+    right: 1px;
+    left: 1px;
+}
+
+.header-top-card {
+    bottom: 15%;
+    width: 100%;
+    height: 30%;
+
+}
+
+/*--------------------------------------------Card images------------------------------------------------------*/
+
+.card-image-right{
+    position: absolute;
+    left: 43%;
+    top: 15%;
+    width: 40%;
+    height: auto;
+    transform: rotate(-90deg);
+}
+
+.card-image-right-chance{
+    position: absolute;
+    left: 50%;
+    top: 5%;
+    width: 23%;
+    height: auto;
+    transform: rotate(-90deg);
+}
+
+.card-image-right-luxury{
+    position: absolute;
+    left: 25%;
+    top: 10%;
+    width: 85%;
+    height: 85%;
+    object-fit: cover;
+
+    transform: rotate(-90deg);
+}
+
+
+.card-image-left{
+    position: absolute;
+    left: 15%;
+    top: 15%;
+    width: 40%;
+    height: auto;
+    transform: rotate(90deg);
+}
+
+.card-image-left-electric{
+    position: absolute;
+    left: 10%;
+    bottom: 0.5%;
+    width: 50%;
+    height: auto;
+    transform: rotate(90deg);
+}
+
+.card-image-bottom{
+    position: absolute;
+    right: 11%;
+    bottom: 18%;
+    width: 80%;
+    height: auto;
+
+}
+
+.card-image-bottom-income{
+    position: absolute;
+    right: 35%;
+    bottom: 35%;
+    width: 30%;
+    height: 15%;
+
+}
+
+.card-image-bottom-chance{
+    position: absolute;
+    right: 25%;
+    bottom: 15%;
+    width: 50%;
+    height: 50%;
+
+}
+
+.card-image-top{
+    position: absolute;
+    left: 15%;
+    top: 15%;
+    width: 80%;
+    height: auto;
+    transform: rotate(180deg);
+}
+
+.card-image-top-chance{
+    position: absolute;
+    right: 25%;
+    bottom: 35%;
+    width: 50%;
+    height: 50%;
+    transform: rotate(180deg);
+}
+
+
+/*--------------------------------------------Rotations------------------------------------------------------*/
+.rotation90 {
+    transform: rotate(90deg);
+}
+.rotation180{
+    transform: rotate(180deg);
+}
+.rotation-90 {
+    transform: rotate(-90deg);
+}
+
+/*--------------------------------------------Colors------------------------------------------------------*/
+
+.red {
+    background-color: #ed1b24;
+}
+
+.yellow {
+    background-color: #fef200;
+}
+
+.lightblue {
+    background-color: #aae0fa;
+}
+
+.brown {
+    background-color: #955436;
+}
+
+.blue {
+    background-color: #0072bb;
+}
+
+.green {
+    background-color: #1fb25a;
+}
+
+.orange {
+    background-color: #f7941d;
+}
+
+.pink {
+    background-color: #d93a96;
+}
+
