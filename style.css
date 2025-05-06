@@ -26,7 +26,7 @@
 }
 
 .col {
-    flex: 0 0 7.78%;
+    /*flex: 0 0 7.78%;*/
     max-width: 7.78%;
     padding: 0;
     margin: 0;
@@ -48,11 +48,13 @@
 .tile{
     outline: 1px solid black;
 }
+.tile:hover {
+    box-shadow: 0 0 10px black;
+}
 
 .side-tile {
     outline: 1px solid black;
     width: 100%;
-    flex-grow: 1;
     position: relative;
 }
 
@@ -114,6 +116,15 @@
     outline: 5px solid white;
 }
 
+.chance:hover {
+    box-shadow: 0 0 15px black;
+}
+
+.chance:active {
+    transform: scale(1.5);
+    box-shadow: 0 4px 15px black;
+}
+
 .chest{
     position: absolute;
     left: 7%;
@@ -124,6 +135,13 @@
     outline: 5px solid white;
 }
 
+.chest:hover {
+    box-shadow: 0 0 15px black;
+}
+.chest:active {
+    transform: scale(1.5);
+    box-shadow: 0 4px 15px black;
+}
 
 
 /*--------------------------------------------Tile title------------------------------------------------------*/
@@ -180,7 +198,6 @@
     position: absolute;
     outline: 2px solid black;
 }
-
 
 .header-right-property {
     top: 1px;
@@ -254,8 +271,7 @@
 .card-image-right-chance{
     position: absolute;
     left: 50%;
-    top: 5%;
-    width: 23%;
+    width: 25%;
     height: auto;
     transform: rotate(-90deg);
 }
@@ -312,15 +328,15 @@
     position: absolute;
     right: 25%;
     bottom: 15%;
-    width: 50%;
-    height: 50%;
+    width: 47%;
+    height: auto;
 
 }
 
 .card-image-top{
     position: absolute;
     left: 15%;
-    top: 15%;
+    top: 21%;
     width: 80%;
     height: auto;
     transform: rotate(180deg);
@@ -330,8 +346,8 @@
     position: absolute;
     right: 25%;
     bottom: 35%;
-    width: 50%;
-    height: 50%;
+    width: 47%;
+    height: auto;
     transform: rotate(180deg);
 }
 
